@@ -1,0 +1,21 @@
+﻿<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width,initial-scale=1'/>
+  <title>Mentor Tribute</title>
+  <style>body{font-family:Segoe UI,Roboto,Arial;padding:20px;max-width:720px;margin:auto}input,textarea{width:100%;margin:6px 0;padding:8px}button{padding:8px 12px}</style>
+</head>
+<body>
+  <h1>Send a Tribute</h1>
+  <form id="tributeForm">
+    <label>Mentee name<input id="mentee" placeholder="Your name" required></label>
+    <label>Mentor name<input id="mentor" placeholder="Mentor name" required></label>
+    <label>Location<input id="location" placeholder="Location / Field"></label>
+    <label>Message<textarea id="message" placeholder="Write your tribute" required rows="6"></textarea></label>
+    <button type="submit">Send Tribute</button>
+  </form>
+  <div id="status" aria-live="polite" style="margin-top:12px"></div>
+  <script src="submit-tribute.js"></script>
+</body>
+</html>
